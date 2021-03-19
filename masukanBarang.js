@@ -1,6 +1,7 @@
 var button = document.getElementById("beli");
 var input = document.getElementById("inputUser");
 var ul = document.querySelector("ul");
+var hapus = document
 
 button.addEventListener("click", function addListAfterClick() {
   if (input.value.length > 0) {
@@ -10,6 +11,7 @@ button.addEventListener("click", function addListAfterClick() {
     input.value = "";
   }
 });
+
 input.addEventListener("keypress", function addListAfterKeypress(event) {
   if (input.value.length > 0 && event.keyCode === 13) {
     var li = document.createElement("li");
